@@ -143,7 +143,7 @@ class Image : virtual public NetworkClient, virtual public Adafruit_GFX
     const int kernelX = _kernelX;
 
     const unsigned char (*kernel)[_kernelWidth] = _kernel;
-#elif define(ARDUINO_INKPLATE2)
+#elif defined(ARDUINO_INKPLATE2)
     int8_t ditherBuffer[3][16][E_INK_HEIGHT + 20];
 
     int8_t (*ditherBuffer_r)[E_INK_HEIGHT + 20] = ditherBuffer[0];
